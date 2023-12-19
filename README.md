@@ -9,3 +9,5 @@ Similar procedure for the CCL. It replaces the CCL according the State of Charge
 When the SoC exceeds the "SOC_DEGRADE_LIMIT" the CCL is set to the value which is set up under "UPPER_CURRENT". 
 This is to give the BMS time to balance the cells. The balancing of the BMS is only active while charging. 
 Limiting the current extends the charging time at the upper SoS and therewith extends the balancing time.
+
+At the end you have a second BMS in the venus System. You have to activate it as the leading BMS under "Settings" - "DVCC" (all the way down).
