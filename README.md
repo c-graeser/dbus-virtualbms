@@ -1,7 +1,7 @@
 This package is to solve the following problem:
 The PACE-BMS send Charging Voltage Limit "CVL" and Charging Current Limit "CCL" according its fixed configuration settings.
-The CVL is taken from the BMS Setting "Pack OV Alarm(V)". This leads to the behaviour that the Venus System takes this (too hight) value for the charging limits. 
-Reaching that limit the BMS cuts off the charging.
+The CVL is taken from the BMS Setting "Pack OV Alarm(V)". This leads to the behaviour that the Venus System takes this (too high) value for the charging limits. 
+Reaching that limit the BMS cuts off the charging path. This leads to alarms and is certainly not as expected.
 
 ##### SETUP #####
 Copy the files to the folder:
