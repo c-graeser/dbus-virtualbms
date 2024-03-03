@@ -1,6 +1,8 @@
 Prerequisite
+
 Using the Raspberry Pi Image Victron Venus OS
 Using a Pace BMS (maybe this solution hels in case of other BMS too)
+
 Assumption:
 You have a running setup of an ESS in Victron Venus OS.
 Your LiFePo4 Battery is connected with a canbus to the Venus system.
