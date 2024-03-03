@@ -1,3 +1,10 @@
+Prerequisite
+Using the Raspberry Pi Image Victron Venus OS
+Using a Pace BMS (maybe this solution hels in case of other BMS too)
+Assumption:
+You have a running setup of an ESS in Victron Venus OS.
+Your LiFePo4 Battery is connected with a canbus to the Venus system.
+
 This package is to solve the following problem:
 The PACE-BMS send Charging Voltage Limit "CVL" and Charging Current Limit "CCL" according its fixed configuration settings.
 The CVL is taken from the BMS Setting "Pack OV Alarm(V)". This leads to the behaviour that the Venus System takes this (too high) value for the charging limits. 
