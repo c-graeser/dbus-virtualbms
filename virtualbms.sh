@@ -1,6 +1,20 @@
 #!/bin/bash
 # /data/dbus-virtualbms/virtualbms.sh
 
+# Test if there is already a can8 adapter installed
+if ! grep -q can8 /etc/network/interfaces
+then
+#    echo "can8 wird installiert..."
+    echo "# CAN installed by Virtualbms" >>/etc/network/interfaces
+    echo "auto can8" >>/etc/network/interfaces
+    echo "  iface can8 inet manual" >>/etc/network/interfaces
+    echo "  pre-up /sbin/ip link set can8 type can bitrate 500000" >>/etc/network/interfaces
+    echo "  up /sbin/ifconfig can8 up" >>/etc/network/interfaces
+    echo "  down /sbin/ifconfig can8 down " >>/etc/network/interfaces
+    /sbin/ifup can8
+fi
+
+
 SoC=50
 
 # Set up vitual CANBus Interface:
