@@ -12,7 +12,11 @@ then
     echo "  up /sbin/ifconfig can8 up" >>/etc/network/interfaces
     echo "  down /sbin/ifconfig can8 down " >>/etc/network/interfaces
 fi
+
+ifdown can8
+sleep 2
 /sbin/ifup can8
+
 
 SoC=50
 
