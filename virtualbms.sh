@@ -11,9 +11,8 @@ then
     echo "  pre-up /sbin/ip link set can8 type can bitrate 500000" >>/etc/network/interfaces
     echo "  up /sbin/ifconfig can8 up" >>/etc/network/interfaces
     echo "  down /sbin/ifconfig can8 down " >>/etc/network/interfaces
-    /sbin/ifup can8
 fi
-
+/sbin/ifup can8
 
 SoC=50
 
